@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">Test</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">Main.Automation<br>Main.Login<br></th>
+	    <th id="testClassNameId" hidden="true">Automation<br>Login<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Listener Test Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\eclipse-workspace\SunrayAssignment\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:31</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>5</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+									<tr>
+		<td class="time">1648985001436</td>
+		<td class="header failedConfig" colspan="4" onClick="toggleElement('1272865a-c400-4ea3-9d58-890defd379cd','block');changeSingleIcon('span-1272865a-c400-4ea3-9d58-890defd379cd');" title="Click to expand/collapse" style="cursor: pointer;">
+		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>Main.Automation</div>
+		<div style="float:right;">@AfterMethod &nbsp;&nbsp;<span id='span-1272865a-c400-4ea3-9d58-890defd379cd' class="glyphicon glyphicon-menu-down"></span></div>
+		</td>
+	</tr>
+			<tr>
+		<td class="time">1648985001436</td>
+		<td class="methodConfiguration">
+				<span class="description"><b>Class: </b>class Main.Automation</span><br>
+		<span class="description"><b>Method: </b>closingBrowser</span><br>
+				<span class="duration"><b>Duration: </b>0.001s</span><br>
+		</td>
+		<td class="resultConfiguration">
+										<div class="stackTrace" id="1272865a-c400-4ea3-9d58-890defd379cd">
+								<a href="javascript:toggleElement('exception-1272865a-c400-4ea3-9d58-890defd379cd','block')" title="Click to expand/collapse"><b>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;Main.Automation.driver&quot; is null</b></a><br>
+		    <div class="stackTrace" id="exception-1272865a-c400-4ea3-9d58-890defd379cd">
+							Main.Automation.closingBrowser(Automation.java:35)<br>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br>
+							java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>
+							java.base/java.lang.reflect.Method.invoke(Method.java:568)<br>
+							org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br>
+							org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)<br>
+							org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)<br>
+							org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)<br>
+							org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)<br>
+							org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)<br>
+							org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)<br>
+							org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br>
+							org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br>
+							org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br>
+							org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br>
+							org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br>
+							org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br>
+							java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br>
+							org.testng.TestRunner.privateRun(TestRunner.java:808)<br>
+							org.testng.TestRunner.run(TestRunner.java:603)<br>
+							org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br>
+							org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br>
+							org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br>
+							org.testng.SuiteRunner.run(SuiteRunner.java:326)<br>
+							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>
+							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br>
+							org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br>
+							org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br>
+							org.testng.TestNG.runSuites(TestNG.java:1092)<br>
+							org.testng.TestNG.run(TestNG.java:1060)<br>
+							org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>
+							org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>
+							org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+									</div>
+				</div>
+		</td>
+	</tr>
+						
+				
+																
+											<tr>
+	<td class="time">1648985001400</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('18ece144-5c79-4876-bdca-94102059f745','block');changeSingleIcon('span-18ece144-5c79-4876-bdca-94102059f745');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>Main.Automation</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-18ece144-5c79-4876-bdca-94102059f745' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1648985001400</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>invalidLogin</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.026s</span><br>
+	</td>
+	<td class="result">
+						<div class="noCollapse" id="18ece144-5c79-4876-bdca-94102059f745" style="display: block;">
+						<a href="javascript:toggleElement('exception-18ece144-5c79-4876-bdca-94102059f745','block')" title="Click to expand/collapse"><b>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;Main.Automation.driver&quot; is null</b></a><br/>
+		<div class="stackTrace" id="exception-18ece144-5c79-4876-bdca-94102059f745">
+					Main.Automation.invalidLogin(Automation.java:43)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br/>
+					java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:568)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:808)<br/>
+					org.testng.TestRunner.run(TestRunner.java:603)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:326)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1092)<br/>
+					org.testng.TestNG.run(TestNG.java:1060)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+				
+												<tr>
+			<td class="time">1648985001655</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('d7fd050b-1c3d-43e9-9eb1-99392b35920e','block');changeSingleIcon('span-d7fd050b-1c3d-43e9-9eb1-99392b35920e');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>Main.Login</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-d7fd050b-1c3d-43e9-9eb1-99392b35920e' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1648985001655</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>logintest01</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>6.506s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="d7fd050b-1c3d-43e9-9eb1-99392b35920e" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1648985014691</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('6fc15b41-c4dc-4415-a5f8-1beb8330a3a7','block');changeSingleIcon('span-6fc15b41-c4dc-4415-a5f8-1beb8330a3a7');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>Main.Login</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-6fc15b41-c4dc-4415-a5f8-1beb8330a3a7' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1648985014691</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>logintest03</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>5.825s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="6fc15b41-c4dc-4415-a5f8-1beb8330a3a7" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1648985020768</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('e0c1678e-fc52-4b03-bebd-cd75756d8273','block');changeSingleIcon('span-e0c1678e-fc52-4b03-bebd-cd75756d8273');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>Main.Login</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-e0c1678e-fc52-4b03-bebd-cd75756d8273' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1648985020768</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>logintest04</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>7.861s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="e0c1678e-fc52-4b03-bebd-cd75756d8273" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1648985008627</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('df060199-f0b1-447d-90f8-b6295ec56358','block');changeSingleIcon('span-df060199-f0b1-447d-90f8-b6295ec56358');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>Main.Login</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-df060199-f0b1-447d-90f8-b6295ec56358' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1648985008627</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>logintest02</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>5.796s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="df060199-f0b1-447d-90f8-b6295ec56358" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
